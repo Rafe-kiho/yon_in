@@ -13,13 +13,15 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icontest"/>
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="100dp"
         android:layout_gravity="center_horizontal"
         android:hint="이메일을 입력해주세요."
         android:inputType="textEmailAddress" />
@@ -42,10 +44,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/autoSignup"
             android:text="자동 로그인"/>
+
         <Button
             android:id="@+id/buttonSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="로그인" />
     </LinearLayout>
 
@@ -53,7 +57,8 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:orientation="vertical"
