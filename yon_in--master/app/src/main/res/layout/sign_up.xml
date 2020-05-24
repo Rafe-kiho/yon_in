@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icontest"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="이메일을 입력해주세요."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="패스워드를 입력해주세요."
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoSignup"
+            android:text="자동 로그인"/>
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="로그인" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonFindID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
+
+                />
+
+            <Button
+                android:id="@+id/ButtonFindPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기" />
+        </LinearLayout>
+
+        <Button
+            android:text="신규 회원가입"
+            android:id="@+id/textViewSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/textviewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
