@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/My_Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="50dp"
+        android:gravity="center|left"
+        android:text="마이 페이지"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_weight="1"
+        android:gravity="fill_vertical"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_padding="10dp">
+
+        <TextView
+            android:id="@+id/Text_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="아이디"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/Edit_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="ididid@example.com"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_margin="10dp"
+        android:layout_padding="10dp"
+        android:layout_weight="1"
+        android:gravity="fill_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Text_Nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="닉네임"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/Edit_Nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="BBong_Party"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="fill_vertical"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_padding="10dp">
+
+        <TextView
+            android:id="@+id/Text_Pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="비밀번호"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/Edit_PW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="********"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_padding="10dp">
+
+        <RadioButton
+            android:id="@+id/RigntHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오른손잡이" />
+
+        <RadioButton
+            android:id="@+id/LeftHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="왼손잡이" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_compl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="70dp"
+        android:layout_padding="10dp"
+        android:gravity="center"
+        android:text="완료" />
+</LinearLayout>
