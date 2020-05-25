@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
 
 
@@ -44,12 +46,11 @@
             android:text="자동 로그인"/>
 
         <Button
-            android:id="@+id/buttonSignin"
+            android:id="@+id/buttonSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="로그인"
-            tools:ignore="DuplicateIds" />
+            android:text="로그인" />
     </LinearLayout>
 
     <LinearLayout
@@ -59,17 +60,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/buttonFindID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
 
-        <Button
-                android:id="@+id/ButtonFindPassword"
+                />
+
+            <Button
+                android:id="@+id/ButtonFindPW"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="비밀번호 찾기" />
+        </LinearLayout>
 
         <Button
             android:text="신규 회원가입"
-            android:id="@+id/buttonSignup"
+            android:id="@+id/textViewSignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
