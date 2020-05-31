@@ -39,7 +39,7 @@
         <EditText
             android:id="@+id/Edit_ID"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:ems="10"
             android:inputType="textEmailAddress"
             android:text="ididid@example.com"
@@ -68,7 +68,7 @@
         <EditText
             android:id="@+id/Edit_Nick"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="BBong_Party"
@@ -96,7 +96,7 @@
         <EditText
             android:id="@+id/Edit_PW"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="54dp"
             android:ems="10"
             android:inputType="textPassword"
             android:text="********"
@@ -112,7 +112,7 @@
         android:layout_margin="10dp">
 
         <RadioButton
-            android:id="@+id/RigntHand"
+            android:id="@+id/RightHand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="오른손잡이" />
@@ -125,12 +125,20 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/log_del"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="회원 탈퇴" />
+
     <Button
         android:id="@+id/bt_compl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="70dp"
+        android:layout_margin="35dp"
         android:gravity="center"
         android:text="완료" />
 

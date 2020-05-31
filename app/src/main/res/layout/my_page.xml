@@ -96,7 +96,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center|left"
-            android:text="*******" />
+            android:text="1234567"
+            android:inputType="textPassword"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -107,7 +109,7 @@
         android:layout_margin="10dp">
 
         <RadioButton
-            android:id="@+id/RigntHand"
+            android:id="@+id/RightHand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="오른손잡이" />
@@ -120,6 +122,14 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="로그아웃" />
+
     <Button
         android:id="@+id/bt_compl"
         android:layout_width="match_parent"
@@ -128,4 +138,5 @@
         android:gravity="center"
         android:text="수정"
         android:layout_margin="70dp" />
+
 </LinearLayout>
